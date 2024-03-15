@@ -1,2 +1,2 @@
 # Description
-Simple repository created to store code used in order to learn JavaServer Pages.
+Repository for code examples used while learning JavaServer Pages.
