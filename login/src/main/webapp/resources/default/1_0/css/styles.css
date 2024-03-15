@@ -1,0 +1,23 @@
+input {
+    display: block;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    /*background-color: #4CAF50; !* Green background *!*/
+    color: white;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.error {
+    background-color: crimson;
+}
+
+.info {
+    background-color: cornflowerblue;
+}

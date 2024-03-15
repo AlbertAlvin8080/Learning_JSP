@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <welcome-file-list>
+<!--        <welcome-file>/page2.jsp</welcome-file>-->
+<!--        <welcome-file>/form-test01.html</welcome-file>-->
+<!--        <welcome-file>/form-cookie.html</welcome-file>-->
+<!--        <welcome-file>/cookies/cookie-language-home.jsp</welcome-file>-->
+<!--        <welcome-file>/POST/post-test01.html</welcome-file>-->
+<!--        <welcome-file>/servlets/servlets-test01.jsp</welcome-file>-->
+<!--        <welcome-file>/servlets/servlets-test02.jsp</welcome-file>-->
+<!--        <welcome-file>/errors/error-test01.jsp</welcome-file>-->
+<!--        <welcome-file>/include-directive/include-test01.jsp</welcome-file>-->
+<!--        <welcome-file>/JSTL/jstl-index.jsp</welcome-file>-->
+        <welcome-file>/JSTL/jstl-sql.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>servletTest02</servlet-name>
+        <servlet-class>org.example.jsp_first_test.servlets.ServletTest02JSON</servlet-class>
+        <init-param>
+            <param-name>unique.file.path</param-name>
+            <param-value>E:/Shibuya/</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>servletTest02</servlet-name>
+        <url-pattern>/servlet-test02</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>file.path</param-name>
+        <param-value>C:/Holodomor/</param-value>
+    </context-param>
+</web-app>
